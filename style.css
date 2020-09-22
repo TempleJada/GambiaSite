@@ -1,0 +1,285 @@
+/*----------------*/
+/* BASIC SETUP*/
+/*----------------*/
+
+body{
+    background-color: papayawhip;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(backgroundpic.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px; 
+   
+}
+
+.main-nav {
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #16a085;
+
+}
+
+.welcome-gambia{
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative; 
+	top: 0px;
+    color: #16a085;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+/*----------------*/
+/* BUTTONS */
+/*----------------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: wheat;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    color: wheat;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #16a085;
+    color: #16a085;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #0e6453;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #16a085;
+    color: wheat;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #16a085;
+    color:wheat;
+}
+
+/*----------------*/
+/* REUSABLE COMPONENTS*/
+/*----------------*/
+
+/*section {
+    padding: 80px 0;
+}
+
+/*----------------*/
+/* HEADERS*/
+/*----------------*/
+
+h2{
+    color: #2b537c;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color:#16a085;
+    content: "   ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    color: #2b537c;
+    text-align: center ;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.subtitle {
+    color: #b86935;
+}
+
+.facts{
+    color: #b86935;
+}
+
+.center {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*---------------------*/
+/* LIST AND TABLE DATA*/
+/*-------------------*/
+  
+li{
+    color: #b86935;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+td{
+    color: #2b537c;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.title1 {
+    font-size: 40px;
+}
+/* Single-direction drop shadow */
+
+hr.style1 {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/*----------------*/
+/* FORM STRUCTURE */
+/*----------------*/
+
+/* Importing the Roboto font from Google Fonts. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+/* Set font of all elements to 'Roboto' */
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #E3F2FD;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
